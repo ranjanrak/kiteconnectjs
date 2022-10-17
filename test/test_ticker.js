@@ -21,6 +21,7 @@ function testTicker() {
     describe("ltpModeTick", function() {
         it("Fetch ltp mode tick data", () => {
             var tickData = ticker.parseBinary(toArrayBuffer(ltpPacket));
+            console.log(tickData);
             expect(tickData).to.be.an("array");
             expect(tickData[0].mode).to.equal("ltp");
             expect(tickData).to.have.nested.property("[0].instrument_token");
