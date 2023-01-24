@@ -7,7 +7,6 @@ on:
 jobs:
   publish-doc:
     runs-on: ubuntu-20.04
-    needs: publish-npm
     permissions:
       pages: write
       id-token: write
