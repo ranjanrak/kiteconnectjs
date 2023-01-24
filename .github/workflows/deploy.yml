@@ -23,6 +23,7 @@ jobs:
         run: |
           npm install
           npm install -g jsdoc
+          npm install --save-dev minami
 
       - name: Building documentation for github page
         run: jsdoc -c .jsdoc.json
