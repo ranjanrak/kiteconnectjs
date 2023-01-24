@@ -1,0 +1,33 @@
+name: Deploy
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  publish-doc:
+    runs-on: ubuntu-20.04
+    needs: publish-npm
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Dependencies
+        run: |
+          npm install
+          npm install jsdoc
+
+      - name: Building documentation for github page
+        run: jsdoc -r ./lib -d ./docs
+
+      - name: Upload artifacts
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs/
+
+      - id: deployment
+        uses: actions/deploy-pages@v1
