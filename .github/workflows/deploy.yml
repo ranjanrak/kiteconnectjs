@@ -23,10 +23,9 @@ jobs:
         run: |
           npm install
           npm install -g jsdoc
-          npm install --save-dev minami
 
       - name: Building documentation for github page
-        run: jsdoc -c .jsdoc.json
+        run: jsdoc -r ./lib -d ./docs
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v1
