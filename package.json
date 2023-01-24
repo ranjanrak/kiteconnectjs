@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "jsdoc": "^3.4.0",
-    "minami": "^1.1.1"
+    "minami": "^1.2.3"
   },
   "engines": {
     "node": ">=8.0.0"

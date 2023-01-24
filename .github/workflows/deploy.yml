@@ -21,11 +21,11 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          npm install -g jsdoc
           npm install
+          npm install -g jsdoc
 
       - name: Building documentation for github page
-        run: jsdoc -r ./lib -d ./docs
+        run: jsdoc -c .jsdoc.json
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v1
