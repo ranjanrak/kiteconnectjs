@@ -21,7 +21,6 @@
         "encoding": "utf8",
         "private": true,
         "recurse": true,
-        "sort": false,
-        "template": "./node_modules/minami"
+        "sort": false
     }
 }
