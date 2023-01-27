@@ -24,14 +24,8 @@ jobs:
           npm install
           npm install -g jsdoc
 
-      - name: Build document
-        uses: andstor/jsdoc-action@v1
-        with:
-          source_dir: ./lib
-          output_dir: ./docs
-          config_file: .jsdoc.json
-          template: minami
-          front_page: README.md
+      - name: Building documentation for github page
+        run: jsdoc -r ./lib -d ./docs
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v1
