@@ -36,7 +36,7 @@ jobs:
           npm install
           npm install typedoc
       - name: Building documentation for github page
-        run: typedoc --out ./docs
+        run: npx typedoc --out ./docs
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
