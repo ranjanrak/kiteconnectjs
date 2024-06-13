@@ -1,6 +1,10 @@
 {
   "out": "docs",
+<<<<<<< HEAD
   "name": "The Kite Connect API typescript client",
+=======
+  "name": "Kiteconnect typescript client",
+>>>>>>> 3a570044c3950520181f6f93d89b5b7d246e0ff9
   "excludeExternals": true,
   "excludePrivate": true,
   "excludeProtected": true,

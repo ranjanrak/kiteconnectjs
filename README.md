@@ -1,6 +1,6 @@
-# The Kite Connect API JavaScript/TypeScript Client
+# The Kite Connect API TypeScript/JavaScript Client
 
-The official JavaScript/TypeScript for communicating with the [Kite Connect API](https://kite.trade).
+The official TypeScript/JavaScript for communicating with the [Kite Connect API](https://kite.trade).
 
 Kite Connect is a set of REST-like APIs that expose many capabilities required to build a complete investment and trading platform. Execute orders in real time, manage user portfolio, stream live market data (WebSockets), and more, with the simple HTTP API collection.
 
@@ -182,6 +182,10 @@ npm run test
 ## Generate documentation
 
 ```
+<<<<<<< HEAD
+=======
+$ npm install typedoc --save-dev
+>>>>>>> 3a570044c3950520181f6f93d89b5b7d246e0ff9
 $ npx typedoc --out ./docs
 ```
 
